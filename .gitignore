@@ -18,7 +18,10 @@
 
 # Ignorer les répertoires de données
 /data/
-echo "Module 1 Docker et Terraform/yellow_tripdata_2021-01.csv" >> .gitignore
-echo "Module 1 Docker et Terraform/ny_taxi_postgress_data/" >> .gitignore
-
 /ny_taxi_postgress_data/
+Module\ 1\ Docker\ et\ Terraform/ny_taxi_postgress_data/
+
+# Ignorer les fichiers et répertoires Docker
+docker-compose.override.yml
+docker-data/
+.env
