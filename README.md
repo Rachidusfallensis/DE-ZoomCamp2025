@@ -7,13 +7,21 @@ This repository contains my exercises and homework for the **Data Zoomcamp 2025*
 The repository is structured as follows:
 
 📂
+
 │── 📁 Module 1 docker & terraform  # Introduction, setup, and first tasks
+
 │── 📁 Module 2 workflow & orchestration  # Data ingestion and pipelines
+
 │── 📁 Module 3 data-warehouse  # Data warehouses and analytics
+
 │── 📁 Module 4 analytics engineering  # Workflow orchestration
+
 │── 📁 Module 5 batch  # Batch processing
+
 │── 📁 Module 6 streaming  # Streaming
-│── 📁 workshop  # Project work
+
+│── 📁 Workshop  # Project work
+
 │── README.md   # This file
 
 ## 📝 Notes
