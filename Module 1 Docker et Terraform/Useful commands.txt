@@ -5,10 +5,23 @@ docker run -it \
   -e POSTGRES_DB="ny_taxi" \
   -v "/Users/aronafall/Documents/Learning/DE-ZoomCamp2025/Module 1 Docker et Terraform/ny_taxi_postgress_data:/var/lib/postgresql/data" \
   -p 5432:5432 \
+  --network="pg-network" \
+  --name="pg-database" \
   postgres:13
 
 # To connect to the postgres container with pgcli
 pgcli -h localhost -p 5432 -u root -d ny_taxi
 
 
-
+# PG admin 
+─ docker run -it \                                                                                                                                                                               ─╯
+  -e PGADMIN_DEFAULT_EMAIL="rachidfall5@gmail.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+ --network="pg-network" \
+  --name="pg-admin" \
+  dpage/pgadmin4
+  
+  
+# Build the image
+docker build -t taxi_ingest:v001
